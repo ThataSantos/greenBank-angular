@@ -1,0 +1,101 @@
+<div class="pagetitle">
+  <h1>Admin Dashbord</h1>
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+      <li class="breadcrumb-item">Admin Dashbord</li>
+      <li class="breadcrumb-item active">Database Customers</li>
+    </ol>
+  </nav>
+</div>
+<section class="section">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="col-3">
+            <h5 class="card-title">Database Customers</h5>
+          </div>
+          <div
+            class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns"
+          >
+            <div class="dataTable-top">
+              <div class="dataTable-dropdown">
+                <label
+                  ><select class="dataTable-selector">
+                    <option value="5">5</option>
+                    <option value="10" selected="">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                  </select>
+                  entries per page</label
+                >
+              </div>
+              <div class="dataTable-search">
+                <input
+                  class="dataTable-input"
+                  placeholder="Search..."
+                  type="text"
+                />
+                <button class="btn btn-outline-success">Search</button>
+                <!-- fazer função pesquisar e diminuir o tamanho do botão -->
+              </div>
+            </div>
+            <div class="dataTable-container">
+              <table class="table datatable dataTable-table">
+                <thead>
+                  <tr>
+                    <th scope="col" data-sortable="" style="width: 5.6902%">
+                      <a href="#" class="dataTable-sorter">#</a>
+                    </th>
+                    <th scope="col" data-sortable="" style="width: 28.0295%">
+                      <a href="#" class="dataTable-sorter">Name</a>
+                    </th>
+                    <th scope="col" data-sortable="" style="width: 37.7239%">
+                      <a href="#" class="dataTable-sorter">Account Type</a>
+                    </th>
+                    <th scope="col" data-sortable="" style="width: 9.27292%">
+                      <a href="#" class="dataTable-sorter">date </a>
+                    </th>
+                    <th scope="col" data-sortable="" style="width: 19.2835%">
+                      <a href="#" class="dataTable-sorter">Actions</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Brandon Jacob</td>
+                    <td>legal person account</td>
+                    <td>09/05/2022</td>
+                    <td>
+                      <button class="btn btn-outline-success">Update</button>
+                      <br /><!-- fazer logica dos botões -->
+                      <button class="btn btn-outline-danger">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Bridie Kessler</td>
+                    <td>individual account</td>
+                    <td>09/05/2022</td>
+                    <td><button class="btn btn-outline-success">Update</button>
+                      <br /><!-- fazer logica dos botões -->
+                      <button class="btn btn-outline-danger">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="dataTable-bottom">
+              <div class="dataTable-info">Showing 1 to 5 of 5 entries</div>
+              <nav class="dataTable-pagination">
+                <ul class="dataTable-pagination-list"></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
